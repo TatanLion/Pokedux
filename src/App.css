@@ -1,0 +1,34 @@
+.App {
+  margin-top: 3rem;
+}
+.App img{
+  margin-bottom: 3rem;
+}
+
+/* POKEMON LIST */
+.PokemonList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 80vw));
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 3rem auto 0;
+}
+
+@media screen and (min-width: 720px) {
+ .PokemonList {
+    grid-template-columns: repeat(2, 350px);
+  }
+}
+
+@media screen and (min-width: 1240px) {
+ .PokemonList {
+    grid-template-columns: repeat(3, 350px);
+  }
+}
+
+@media screen and (min-width: 1680px) {
+ .PokemonList {
+    grid-template-columns: repeat(4, 350px);
+  }
+}
